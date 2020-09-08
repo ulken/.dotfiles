@@ -1,0 +1,66 @@
+# taps
+tap "github/gh"
+tap "homebrew/cask-fonts"
+tap "schniz/tap"
+
+# command line utilities
+brew "fzf"
+brew "gh"
+brew "git"
+brew "htop"
+brew "jq"
+brew "mas"
+brew "ripgrep"
+brew "shellcheck"
+brew "trash"
+brew "vim"
+brew "yarn"
+brew "zsh"
+brew "schniz/tap/fnm"
+
+# completions
+brew "bash-completion"
+brew "docker-completion"
+brew "docker-compose-completion"
+brew "yarn-completion"
+brew "zsh-completions"
+
+# casks
+cask "alfred"
+cask "appcleaner"
+cask "bartender"
+cask "dash"
+cask "docker"
+cask "dropbox"
+cask "fantastical"
+cask "firefox"
+cask "flux"
+cask "fork"
+cask "glyphfinder"
+cask "google-chrome"
+cask "hyper"
+cask "karabiner-elements"
+cask "numi"
+cask "visual-studio-code"
+cask "spark"
+cask "spotify"
+cask "the-unarchiver"
+cask "1password"
+
+# Mac App Store applications
+mas "Battery Indicator", id: 1206020918
+mas "Bear", id: 1091189122
+mas "Dato", id: 1470584107
+mas "Magnet", id: 441258766
+
+# Quick Look plugins
+cask "qlcolorcode"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlimagesize"
+cask "suspicious-package"
+cask "qlvideo"
+
+# fonts
+cask "font-jetbrains-mono"
