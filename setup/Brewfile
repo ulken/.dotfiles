@@ -4,6 +4,7 @@ tap "homebrew/cask-fonts"
 tap "schniz/tap"
 
 # command line utilities
+brew "bat"
 brew "fzf"
 brew "gh"
 brew "git"
