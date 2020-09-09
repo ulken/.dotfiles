@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-# ensure script is run with `sudo` priviliges
-if [ $EUID != 0 ]; then
-    sudo "$0" "$@"
-    exit $?
-fi
+echo "Applying user defaults"
 
 # repeat keys by pressing and holding down
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
