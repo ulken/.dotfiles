@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-shell=$(dscl . -read ~/ UserShell | rev | cut -d ' ' -f 1 | rev | xargs basename)
+shell=$(dscl . -read ~/ UserShell)
 
-if ! [ "$shell" = "zsh" ]; then
-    chsh -s "$(which zsh)"
+if ! [ "$shell" = "$(brew --prefix)/bin/zsh" ]; then
+  chsh -s "$(which zsh)"
 fi
