@@ -1,12 +1,23 @@
 #!/usr/bin/env bash
 
-# immediately exit on error
 set -e
 
-# check for necessary prerequisites
-if ! xcode-select -p >/dev/null 2>&1; then
-    echo "Xcode Command Line Tools required, please run: \`xcode-select --install\`"
-    exit 2 # missing command
+function install_xcode_cli_tools() {
+    local lock_path=/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+
+    product=$(softwareupdate -l |
+        grep "\*.*Command Line" |
+        head -n 1 | awk -F"*" '{print $2}' |
+        sed -e 's/^ *//' |
+        tr -d '\n')
+    softwareupdate -i "$product" --verbose
+
+    rm $lock_path
+}
+
+if xcode-select -p > /dev/null 2>&1; then
+    echo "Xcode Command Line Tools required, installing..."
+    install_xcode_cli_tools
 fi
 
 ./brew.sh
