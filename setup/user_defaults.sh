@@ -5,6 +5,12 @@ echo "Applying user defaults"
 # repeat keys by pressing and holding down
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# initial key repeat delay
+defaults write -g InitialKeyRepeat -int 14
+
+# key repeat rate
+defaults write -g KeyRepeat -float 1.3
+
 # show ~/Library
 chflags nohidden ~/Library
 
@@ -25,7 +31,7 @@ SCREENSHOTS_PATH=~/Pictures/screenshots
 
 mkdir -p "$SCREENSHOTS_PATH"
 
-defaults write com.apple.screencapture location "$SCREENSHOTS_PATH" 
+defaults write com.apple.screencapture location "$SCREENSHOTS_PATH"
 
 # disable boot-up sound
 sudo nvram SystemAudioVolume=%80
