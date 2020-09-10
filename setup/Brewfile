@@ -42,7 +42,6 @@ cask "hyper"
 cask "karabiner-elements"
 cask "numi"
 cask "visual-studio-code"
-cask "spark"
 cask "spotify"
 cask "the-unarchiver"
 cask "1password"
@@ -52,6 +51,7 @@ mas "Battery Indicator", id: 1206020918
 mas "Bear", id: 1091189122
 mas "Dato", id: 1470584107
 mas "Magnet", id: 441258766
+mas "Spark", id: 1176895641
 
 # Quick Look plugins
 cask "qlcolorcode"
