@@ -7,3 +7,6 @@ if [ -z "$email" ]; then
 fi
 
 ssh-keygen -t rsa -b 4096 -C "$email"
+
+pbcopy < "$HOME/.ssh/$key.pub"
+echo "Public SSH key copied to clipboard!"
