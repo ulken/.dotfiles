@@ -37,7 +37,7 @@ defaults write com.apple.screencapture location "$SCREENSHOTS_PATH"
 sudo nvram SystemAudioVolume=%80
 
 # allow installs from anywhere
-sudo spctl —master-disable
+sudo spctl --master-disable
 
 # disable downloaded applications warning
 defaults write com.apple.LaunchServices LSQuarantine -bool NO
