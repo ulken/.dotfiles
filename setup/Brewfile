@@ -51,6 +51,7 @@ cask "1password"
 # Mac App Store applications
 mas "Battery Indicator", id: 1206020918
 mas "Bear", id: 1091189122
+mas "Breaks for Eyes", id: 1439431081 
 mas "Dato", id: 1470584107
 mas "Magnet", id: 441258766
 mas "Spark", id: 1176895641
