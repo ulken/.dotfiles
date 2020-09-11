@@ -1,0 +1,15 @@
+[user]
+  user = ulken
+  name = Oskar Löfgren
+  email = islander.abroad@gmail.com
+[credential]
+  helper = osxkeychain
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore
+[push]
+  default = current
+[pull]
+  rebase = true
+[init]
+  defaultBranch = main
