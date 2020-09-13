@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+ZSH_HOME="$HOME/.zsh"
+
+shell="$(dscl . -read ~/ UserShell | rev | cut -d' ' -f1 | rev)"
+
+if ! [ "$shell" = "$(brew --prefix)/bin/zsh" ]; then
+  zsh_path="$(which zsh)"
+  echo "$zsh_path" | sudo tee -a /etc/shells
+  sudo dscl . -create "$HOME" UserShell "$zsh_path"
+  chsh -s "$zsh_path"
+fi
+
+mkdir -p "$ZSH_HOME"
+
+git clone https://github.com/sindresorhus/pure.git "$ZSH_HOME/pure"
