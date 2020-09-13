@@ -1,4 +1,5 @@
 # shellcheck shell=bash
+# shellcheck disable=SC1090,SC2034
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -11,7 +12,6 @@ function .fs() {
 }
 
 # prompt
-# shellcheck disable=SC2034
 PURE_GIT_UNTRACKED_DIRTY=1
 
 fpath+="$ZSH_HOME/pure"
@@ -22,12 +22,17 @@ prompt pure
 
 # plugins
 
-# shellcheck disable=SC1090
-source "$ZSH_HOME/zsh-autosuggestions/zsh-autosuggestions.zsh"
+plugins=(
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+for plugin in "${plugins[@]}"; do
+  source "$ZSH_HOME/$plugin/$plugin.zsh"
+done
 
 # fzf
 if [ -f ~/.fzf.zsh ]; then
-  # shellcheck disable=SC1090
   source ~/.fzf.zsh
 fi
 
