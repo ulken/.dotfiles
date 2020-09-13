@@ -20,9 +20,14 @@ autoload -U promptinit
 promptinit
 prompt pure
 
+# plugins
+
+# shellcheck disable=SC1090
+source "$ZSH_HOME/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
 # fzf
 if [ -f ~/.fzf.zsh ]; then
-  # shellcheck source=/dev/null
+  # shellcheck disable=SC1090
   source ~/.fzf.zsh
 fi
 
