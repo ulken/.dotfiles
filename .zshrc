@@ -57,3 +57,6 @@ fi
 
 # fnm
 eval "$(fnm env --multi)"
+
+# thefuck
+eval "$(thefuck --alias --enable-experimental-instant-mode)"
