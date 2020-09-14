@@ -2,6 +2,8 @@
 
 set -e
 
+DOTFILES=".dotfiles"
+
 function install_xcode_cli_tools() {
   local lock_path=/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
@@ -15,6 +17,10 @@ function install_xcode_cli_tools() {
   rm $lock_path
 }
 
+function .fs {
+  "$(which git)" --git-dir="$HOME/$DOTFILES" --work-tree="$HOME" $@
+}
+
 if xcode-select -p > /dev/null 2>&1; then
   echo "Xcode Command Line Tools required, installing..."
   install_xcode_cli_tools
@@ -23,3 +29,4 @@ fi
 ./brew.sh
 ./post_install.sh
 ./user_defaults.sh
+.fs submodule update --init
