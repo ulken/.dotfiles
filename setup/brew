@@ -2,10 +2,11 @@
 
 # ensure Homebrew is installed and up-to-date
 
+SOURCE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/Homebrew/install/master/install.sh"
 
 command_exists() {
-    command -v "$1" >/dev/null 2>&1 
+    command -v "$1" > /dev/null 2>&1
 }
 
 install_brew() {
@@ -26,4 +27,4 @@ brew update
 
 # time to get brewing
 echo "Time to brew!"
-brew bundle install
+brew bundle install --file "$SOURCE_PATH/Brewfile"
