@@ -5,8 +5,9 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # PATH
-path+=/usr/local/sbin # Homebrew
-path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # VSCode
+path+=/usr/local/sbin
+path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+path+="$ZSH_HOME/zsh-completions/src"
 
 DOTFILES_REPOSITORY=".dotfiles"
 ZSH_HOME="$HOME/.zsh"

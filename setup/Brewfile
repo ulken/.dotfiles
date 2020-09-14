@@ -26,7 +26,6 @@ brew "bash-completion"
 brew "docker-completion"
 brew "docker-compose-completion"
 brew "yarn-completion"
-brew "zsh-completions"
 
 # casks
 cask "alfred"
