@@ -10,3 +10,7 @@
 	path = .zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 	branch = master
+[submodule ".zsh/zsh-z"]
+	path = .zsh/zsh-z
+	url = https://github.com/agkozak/zsh-z.git
+	branch = master

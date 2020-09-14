@@ -24,6 +24,14 @@ autoload -U promptinit
 promptinit
 prompt pure
 
+# completion
+source "$ZSH_HOME/zsh-z/zsh-z.plugin.zsh"
+
+autoload -U compinit
+compinit
+
+zstyle ':completion:*' menu select
+
 # plugins
 
 plugins=(
