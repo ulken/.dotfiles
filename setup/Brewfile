@@ -26,7 +26,6 @@ brew "schniz/tap/fnm"
 brew "bash-completion"
 brew "docker-completion"
 brew "docker-compose-completion"
-brew "yarn-completion"
 
 # casks
 cask "alfred"
