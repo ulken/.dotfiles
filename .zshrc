@@ -34,15 +34,21 @@ compinit
 zstyle ':completion:*' menu select
 
 # plugins
-
 plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-history-substring-search # order matters!
 )
 
 for plugin in "${plugins[@]}"; do
   source "$ZSH_HOME/$plugin/$plugin.zsh"
 done
+
+# keybindings
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # fzf
 if [ -f ~/.fzf.zsh ]; then
