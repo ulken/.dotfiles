@@ -27,4 +27,5 @@ brew update
 
 # time to get brewing
 echo "Time to brew!"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 brew bundle install --file "$SOURCE_PATH/Brewfile"

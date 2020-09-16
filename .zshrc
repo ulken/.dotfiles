@@ -50,6 +50,11 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+# Homebrew
+
+# don't show "Are you sure you want to..." when first launching an (cask) app 
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 # fzf
 if [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
