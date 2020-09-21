@@ -27,6 +27,7 @@ Temporary Items
 
 # Custom
 .dotfiles/
+.env
 
 # Editors
 .vscode/
