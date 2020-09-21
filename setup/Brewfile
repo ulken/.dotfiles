@@ -2,6 +2,7 @@
 tap "github/gh"
 tap "homebrew/cask-fonts"
 tap "schniz/tap"
+tap "remove-bg/tap"
 
 # command line utilities
 brew "bat"
@@ -18,6 +19,7 @@ brew "thefuck"
 brew "trash"
 brew "tree"
 brew "vim"
+brew "remove-bg/tap/removebg"
 brew "yarn"
 brew "zsh"
 brew "schniz/tap/fnm"
