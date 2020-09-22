@@ -5,7 +5,7 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "homebrew/cask-fonts": {
-        "revision": "05ca9a1455a06a2eda4627c80df6c399899af024"
+        "revision": "6e6d69ca2e7c40adb8d6e6a090d191b4a52498a1"
       },
       "schniz/tap": {
         "revision": "9f7b6aff18f48a52f7e8b0739e582580b9e5204d"
@@ -282,11 +282,11 @@
         }
       },
       "docker-completion": {
-        "version": "19.03.12",
+        "version": "19.03.13",
         "bottle": false
       },
       "docker-compose-completion": {
-        "version": "1.27.2",
+        "version": "1.27.3",
         "bottle": false
       },
       "yarn-completion": {
@@ -385,6 +385,27 @@
             "sierra": {
               "url": "https://homebrew.bintray.com/bottles/tree-1.8.0.sierra.bottle.tar.gz",
               "sha256": "07d980571469a0cc699c69a8726eee338f782ba61c041e58f01ddb2924d08aeb"
+            }
+          }
+        }
+      },
+      "imageoptim-cli": {
+        "version": "3.0.2",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/imageoptim-cli-3.0.2.catalina.bottle.tar.gz",
+              "sha256": "56a9b2dba8f47850a26c335311f8c436b683c0b92ef5ab0b83e91688cf64ec7a"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/imageoptim-cli-3.0.2.mojave.bottle.tar.gz",
+              "sha256": "b7b1923ed31ab32540a5dffcf798675401ca48249fae54f49d67bc6c78feede9"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/imageoptim-cli-3.0.2.high_sierra.bottle.tar.gz",
+              "sha256": "6f1aa4b2e4de3e7a1502f1f8747283589697e5f0f0506f4d24acd53381311706"
             }
           }
         }
@@ -570,6 +591,12 @@
         "options": {
           "full_name": "sizzy"
         }
+      },
+      "imageoptim": {
+        "version": "1.8.8",
+        "options": {
+          "full_name": "imageoptim"
+        }
       }
     },
     "mas": {
@@ -602,10 +629,10 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.5.1",
+        "HOMEBREW_VERSION": "2.5.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "168a520f5773468b74461935a2b6a24439732c11",
-        "CLT": "12.0.0.0.1.1597368733",
+        "Homebrew/homebrew-core": "8771daab6cd2069533f4ec5e024d0846bb857197",
+        "CLT": "12.0.0.0.1.1599194153",
         "Xcode": "12.0",
         "macOS": "10.15.6"
       }
