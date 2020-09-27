@@ -1,9 +1,6 @@
 # shellcheck shell=bash
 # shellcheck disable=SC1090,SC2034
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 # PATH
 path+=/usr/local/sbin
 path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
