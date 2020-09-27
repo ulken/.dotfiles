@@ -52,12 +52,12 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # Homebrew
 
-# don't show "Are you sure you want to..." when first launching an (cask) app 
+# don't show "Are you sure you want to..." when first launching an (cask) app
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # partials
-for file in ~/.{env,fzf.zsh}; do
-  if [ -r "$file" ]; then 
+for file in ~/.{env,aliases,functions,fzf}.zsh; do
+  if [ -r "$file" ]; then
     source "$file"
   fi
 done
