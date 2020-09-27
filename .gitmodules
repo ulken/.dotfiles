@@ -22,3 +22,7 @@
 	path = .zsh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
 	branch = master
+[submodule ".zsh/zsh-vim-mode"]
+	path = .zsh/zsh-vim-mode
+	url = https://github.com/softmoth/zsh-vim-mode.git
+	branch = master

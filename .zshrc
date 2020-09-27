@@ -37,7 +37,8 @@ zstyle ':completion:*' menu select
 plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-history-substring-search # order matters!
+  zsh-history-substring-search # must come after `zsh-syntax-highlighting`
+  zsh-vim-mode
 )
 
 for plugin in "${plugins[@]}"; do
