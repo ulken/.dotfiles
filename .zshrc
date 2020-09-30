@@ -28,12 +28,16 @@ zstyle ':completion:*' menu select
 # plugins
 plugins=(
   zsh-autosuggestions
-  zsh-syntax-highlighting
-  zsh-history-substring-search # must come after `zsh-syntax-highlighting`
+  zsh-history-substring-search
+  fast-syntax-highlighting
 )
 
 for plugin in "${plugins[@]}"; do
-  source "$ZSH_HOME/$plugin/$plugin.zsh"
+  for plugin_path in $ZSH_HOME/$plugin/$plugin{,.plugin}.zsh; do
+    if [ -r "$plugin_path" ]; then
+      source "$plugin_path"
+    fi
+  done
 done
 
 # keybindings
