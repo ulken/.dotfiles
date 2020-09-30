@@ -27,6 +27,7 @@ zstyle ':completion:*' menu select
 
 # plugins
 plugins=(
+  zsh-vim-mode
   zsh-autosuggestions
   zsh-history-substring-search
   fast-syntax-highlighting
@@ -45,6 +46,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+bindkey -rpM viins '^[^[' # Esc-Esc to enter Vim Normal mode fast
 
 # Homebrew
 

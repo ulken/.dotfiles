@@ -1,3 +1,5 @@
+# shellcheck shell=sh
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -11,5 +13,5 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 export PURE_GIT_UNTRACKED_DIRTY=1
 
-
-
+# vim mode
+export MODE_INDICATOR="" # already handled by theme prompt
