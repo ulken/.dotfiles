@@ -2,7 +2,7 @@
 # shellcheck disable=SC1090,SC2034
 
 # PATH
-path+=/usr/local/sbin
+path+="/usr/local/sbin"
 path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 path+="$ZSH_HOME/zsh-completions/src"
 
@@ -48,10 +48,8 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 bindkey -rpM viins '^[^[' # Esc-Esc to enter Vim Normal mode fast
 
-# Homebrew
-
 # partials
-for file in ~/.{env,aliases,functions,fzf}.zsh; do
+for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
   if [ -r "$file" ]; then
     source "$file"
   fi
