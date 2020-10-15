@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 key="${1:-id_rsa}"
 
 # start SSH agent in background
