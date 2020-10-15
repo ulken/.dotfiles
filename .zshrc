@@ -60,3 +60,6 @@ eval "$(fnm env --multi)"
 
 # thefuck
 eval "$(thefuck --alias)"
+
+# ssh-agent
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
