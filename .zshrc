@@ -48,13 +48,6 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 bindkey -rpM viins '^[^[' # Esc-Esc to enter Vim Normal mode fast
 
-# partials
-for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
-  if [ -r "$file" ]; then
-    source "$file"
-  fi
-done
-
 # fnm
 eval "$(fnm env --multi)"
 
@@ -63,3 +56,10 @@ eval "$(thefuck --alias)"
 
 # ssh-agent
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+
+# partials
+for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
+  if [ -r "$file" ]; then
+    source "$file"
+  fi
+done
