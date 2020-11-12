@@ -16,3 +16,6 @@ export PURE_GIT_UNTRACKED_DIRTY=1
 
 # vim mode
 export MODE_INDICATOR="" # already handled by theme prompt
+
+# thefuck
+export THEFUCK_REQUIRE_CONFIRMATION=false
