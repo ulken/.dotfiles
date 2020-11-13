@@ -49,7 +49,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 bindkey -rpM viins '^[^[' # Esc-Esc to enter Vim Normal mode fast
 
 # fnm
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
 
 # thefuck
 eval "$(thefuck --alias)"
