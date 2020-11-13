@@ -3,4 +3,5 @@
 ./change_shell
 ./fix_permissions
 ./brew_updater/install
+pip3 install -r requirements.txt
 "$(brew --prefix)"/opt/fzf/install
