@@ -3,5 +3,6 @@
 ./change_shell
 ./fix_permissions
 ./brew_updater/install
+curl -o- -L https://yarnpkg.com/install.sh | bash
 pip3 install -r requirements.txt
 "$(brew --prefix)"/opt/fzf/install
