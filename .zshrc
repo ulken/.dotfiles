@@ -49,6 +49,12 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 bindkey -rpM viins '^[^[' # Esc-Esc to enter Vim Normal mode fast
 
+# help for built-ins
+unalias run-help 2> /dev/null
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+alias help=run-help
+
 # fnm
 eval "$(fnm env)"
 
