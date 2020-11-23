@@ -25,5 +25,7 @@ pw() {
 
     ph show --field=password "$path" | pbcopy
 
-    echo "Password copied to clipboard"
+    if [ $? -eq 0 ]; then
+        echo "Password copied to clipboard"
+    fi
 }
