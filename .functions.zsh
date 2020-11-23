@@ -23,11 +23,7 @@ streamshell() {
 pw() {
     local -hr path="$1"
 
-    # workaround for password prompt not working in subshell/pipe
-    # this will trigger password prompt if needed,
-    # otherwise just print an empty line
-    ph --no-cache grep "DONT_MATCH"
-
     ph show --field=password "$path" | pbcopy
+
     echo "Password copied to clipboard"
 }
