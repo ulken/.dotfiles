@@ -15,3 +15,5 @@
   defaultBranch = main
 [include]
   path = ~/.gitconfig_work
+[alias]
+	rmb = ! git branch -d $(git branch --merged | grep -Ev \"(\\*|master|main|develop)\")
