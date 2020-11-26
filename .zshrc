@@ -62,7 +62,13 @@ eval "$(fnm env)"
 eval "$(thefuck --alias)"
 
 # ssh-agent
-[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval "$(ssh-agent -s)"
+fi
+
+if ! ssh-add -L > /dev/null; then
+  ssh-add -A
+fi
 
 # partials
 for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
