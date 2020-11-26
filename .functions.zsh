@@ -21,6 +21,8 @@ streamshell() {
 }
 
 pw() {
+    set -o pipefail
+
     local -hr path="$1"
 
     ph show --field=password "$path" | pbcopy
