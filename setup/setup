@@ -17,8 +17,8 @@ function install_xcode_cli_tools() {
   rm $lock_path
 }
 
-function .fs {
-  "$(which git)" --git-dir="$HOME/$DOTFILES" --work-tree="$HOME" $@
+function .fs() {
+  "$(which git)" --git-dir="$HOME/$DOTFILES" --work-tree="$HOME" "$@"
 }
 
 if xcode-select -p > /dev/null 2>&1; then
