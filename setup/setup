@@ -26,7 +26,7 @@ if xcode-select -p > /dev/null 2>&1; then
   install_xcode_cli_tools
 fi
 
+.fs submodule update --init
 ./brew.sh
 ./post_install.sh
 ./user_defaults.sh
-.fs submodule update --init
