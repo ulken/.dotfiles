@@ -16,4 +16,4 @@
 [include]
   path = ~/.gitconfig_work
 [alias]
-	rmb = ! git branch --merged | grep -Ev \"(\\*|master|main|develop)\" | xargs -n 1 git branch -d
+	rmb = ! git branch -vv | grep -v origin/ | xargs -n 1 git branch -d
