@@ -1,6 +1,9 @@
 # shellcheck shell=bash
 # shellcheck disable=SC1090,SC2034
 
+# options
+setopt INC_APPEND_HISTORY_TIME
+
 # PATH
 path+="/usr/local/sbin"
 path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
