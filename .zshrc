@@ -65,11 +65,7 @@ eval "$(fnm env)"
 # thefuck
 eval "$(thefuck --alias)"
 
-# ssh-agent
-if [ ! -S "$SSH_AUTH_SOCK" ]; then
-  eval "$(ssh-agent -s)"
-fi
-
+# add ssh identities stored in Keychain
 if ! ssh-add -L > /dev/null; then
   ssh-add -qA
 fi
