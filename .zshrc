@@ -5,6 +5,7 @@
 setopt INC_APPEND_HISTORY_TIME
 
 # PATH
+path=("/usr/local/opt/coreutils/libexec/gnubin" $path)
 path+="/usr/local/sbin"
 path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 path+="$ZSH_HOME/zsh-completions/src"
