@@ -60,16 +60,16 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 alias help=run-help
 
+# ensure ssh identities stored in Keychain are loaded
+if ! ssh-add -L > /dev/null; then
+  ssh-add -qA
+fi
+
 # fnm
 eval "$(fnm env)"
 
 # thefuck
 eval "$(thefuck --alias)"
-
-# add ssh identities stored in Keychain
-if ! ssh-add -L > /dev/null; then
-  ssh-add -qA
-fi
 
 # partials
 for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
