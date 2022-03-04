@@ -11,6 +11,8 @@ path+="/usr/local/sbin"
 path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 path+="$ZSH_HOME/zsh-completions/src"
 path+="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
+path+="$GOPATH"
+path+="$GOROOT/bin"
 
 function .fs() {
   "$(which git)" --git-dir="$HOME/$DOTFILES_REPOSITORY" --work-tree="$HOME" "$@"

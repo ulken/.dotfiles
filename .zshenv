@@ -24,3 +24,8 @@ export MODE_INDICATOR="" # already handled by theme prompt
 
 # thefuck
 export THEFUCK_REQUIRE_CONFIRMATION=false
+
+# go
+export GOPATH="$HOME/go"
+export GOROOT="/usr/local/go"
+export GOBIN="$GOPATH/bin"
