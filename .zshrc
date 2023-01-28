@@ -79,3 +79,8 @@ for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
     source "$file"
   fi
 done
+
+# pnpm
+export PNPM_HOME="/Users/ulken/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
