@@ -80,6 +80,13 @@ for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
   fi
 done
 
+# bun completions
+[ -s "/Users/ulken/.bun/_bun" ] && source "/Users/ulken/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/Users/ulken/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # pnpm
 export PNPM_HOME="/Users/ulken/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"

@@ -2,9 +2,11 @@
 tap "github/gh"
 tap "homebrew/cask-fonts"
 tap "remove-bg/tap"
+tap "oven-sh/bun"
 
 # command line utilities
 brew "bat"
+brew "bun"
 brew "fnm"
 brew "fzf"
 brew "gh"
