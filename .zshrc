@@ -25,10 +25,11 @@ promptinit
 prompt pure
 
 # completion
-source "$ZSH_HOME/zsh-z/zsh-z.plugin.zsh"
 
 autoload -U compinit
 compinit
+
+eval "$(zoxide init zsh)"
 
 zstyle ':completion:*' menu select
 
