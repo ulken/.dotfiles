@@ -1,1 +1,9 @@
-yarn global add tldr
+#!/usr/bin/env bash
+
+packages=(
+  tldr
+  zx
+  @antfu/ni
+)
+
+pnpm add --global "${packages[@]}"
