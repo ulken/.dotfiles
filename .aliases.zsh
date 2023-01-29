@@ -26,3 +26,6 @@ alias cls="echo -e '\\0033\\0143'"
 
 # file sizes
 alias ds="du -sh" # directory size
+
+# git
+alias lg="lazygit"
