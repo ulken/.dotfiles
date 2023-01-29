@@ -1,8 +1,8 @@
 # list directory contents
-alias ls="ls -G"  # compact view, show colors
-alias la="ls -AF" # compact view, show hidden
-alias ll="ls -al"
-alias l="ls -a"
+alias ls="exa"
+alias la="exa -aF"
+alias ll="exa -al"
+alias l="exa -a"
 
 # directory navigation
 alias ..="cd .."
