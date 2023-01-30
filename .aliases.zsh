@@ -29,3 +29,6 @@ alias ds="du -sh" # directory size
 
 # git
 alias lg="lazygit"
+
+# ping
+alias ping="prettyping --nolegend"
