@@ -67,11 +67,10 @@ if ! ssh-add -L > /dev/null; then
   ssh-add -qA
 fi
 
-# fnm
+# init
 eval "$(fnm env)"
-
-# thefuck
 eval "$(thefuck --alias)"
+eval "$(direnv hook zsh)"
 
 # partials
 for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
