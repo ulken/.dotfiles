@@ -10,6 +10,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias -- -="cd -" # go back
 
+# file viewer
+alias cat="bat"
+
 # edit
 alias edit="$EDITOR"
 alias .ze="edit ~/.zshrc"
