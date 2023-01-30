@@ -35,3 +35,7 @@ alias lg="lazygit"
 
 # ping
 alias ping="prettyping --nolegend"
+
+# gron
+alias norg="gron --ungron"
+alias ungron="gron --ungron"
