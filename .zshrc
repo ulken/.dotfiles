@@ -38,6 +38,7 @@ autoload -U compinit
 compinit
 
 eval "$(zoxide init zsh)"
+source <(klog completion -c zsh)
 [ -s "/Users/ulken/.bun/_bun" ] && source "/Users/ulken/.bun/_bun"
 
 zstyle ':completion:*' menu select
