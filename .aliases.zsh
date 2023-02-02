@@ -16,13 +16,12 @@ alias cat="bat"
 # edit
 alias edit="$EDITOR"
 alias .ze="edit ~/.zshrc"
-alias .zr="source ~/.zshrc"
 alias .ae="edit ~/.aliases.zsh"
-alias .ar="source ~/.aliases.zsh"
 alias .fe="edit ~/.functions.zsh"
-alias .fr="source ~/.functions.zsh"
 alias .ve="edit ~/.vimrc"
-alias .vr="source ~/.vimrc"
+
+# reload zsh config
+alias .zr="exec zsh"
 
 # clear screen (not just scroll down)
 alias cls="echo -e '\\0033\\0143'"
