@@ -1,3 +1,9 @@
+md() {
+    local -hr path="$1"
+
+    mkdir -p "$path" && cd "$_"
+}
+
 pw() {
     set -o pipefail
 
