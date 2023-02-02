@@ -18,6 +18,8 @@ path+="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 path+="$ZSH_HOME/zsh-completions/src"
 path+="$GOPATH"
 path+="$GOROOT/bin"
+path+="$PNPM_HOME"
+path+="$BUN_INSTALL/bin"
 
 function .fs() {
   "$(which git)" --git-dir="$HOME/$DOTFILES_REPOSITORY" --work-tree="$HOME" "$@"
@@ -36,6 +38,7 @@ autoload -U compinit
 compinit
 
 eval "$(zoxide init zsh)"
+[ -s "/Users/ulken/.bun/_bun" ] && source "/Users/ulken/.bun/_bun"
 
 zstyle ':completion:*' menu select
 
@@ -84,15 +87,3 @@ for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
     source "$file"
   fi
 done
-
-# bun completions
-[ -s "/Users/ulken/.bun/_bun" ] && source "/Users/ulken/.bun/_bun"
-
-# Bun
-export BUN_INSTALL="/Users/ulken/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# pnpm
-export PNPM_HOME="/Users/ulken/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end

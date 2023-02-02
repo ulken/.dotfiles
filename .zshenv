@@ -29,3 +29,9 @@ export THEFUCK_REQUIRE_CONFIRMATION=false
 export GOPATH="$HOME/go"
 export GOROOT="/usr/local/go"
 export GOBIN="$GOPATH/bin"
+
+# bun
+export BUN_INSTALL="/Users/ulken/.bun"
+
+# pnpm
+export PNPM_HOME="/Users/ulken/Library/pnpm"
