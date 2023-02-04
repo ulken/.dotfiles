@@ -74,6 +74,7 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 cask "warp"
 cask "1password"
+cask "1password/tap/1password-cli"
 
 # Mac App Store applications
 mas "Battery Indicator", id: 1206020918

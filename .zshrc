@@ -39,6 +39,11 @@ compinit
 
 eval "$(zoxide init zsh)"
 source <(klog completion -c zsh)
+
+# 1password
+eval "$(op completion zsh)"
+compdef _op op
+
 [ -s "/Users/ulken/.bun/_bun" ] && source "/Users/ulken/.bun/_bun"
 
 zstyle ':completion:*' menu select
