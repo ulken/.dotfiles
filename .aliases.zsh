@@ -39,3 +39,7 @@ alias ping="prettyping --nolegend"
 # gron
 alias norg="gron --ungron"
 alias ungron="gron --ungron"
+
+# klog
+alias pc="klog create --should=6h25m" # punch clock
+alias pr="klog today --diff --now"    # punch time remaining

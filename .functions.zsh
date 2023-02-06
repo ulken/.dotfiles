@@ -29,3 +29,33 @@ cv() {
 
     ffmpeg -i "$file_path" -vcodec libx265 -acodec copy -crf 28 -vtag hvc1 -preset fast "${filename}_compressed.$extension"
 }
+
+# punch in
+pi() {
+    local -r time="$1"
+
+    local -a options=(
+        --round=5m
+    )
+
+    if [ -n "$time" ]; then
+        options+=(--time "$time")
+    fi
+
+    klog start "${options[@]}"
+}
+
+# punch out
+po() {
+    local -r time="$1"
+
+    local -a options=(
+        --round=5m
+    )
+
+    if [ -n "$time" ]; then
+        options+=(--time "$time")
+    fi
+
+    klog stop "${options[@]}"
+}
