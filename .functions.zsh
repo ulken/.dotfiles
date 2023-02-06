@@ -48,6 +48,18 @@ pi() {
     klog start "${options[@]}"
 }
 
+# punch lunch 
+pl() {
+    local -r time="$1"
+
+    if [ -z "$time" ]; then
+        echo "<start-time> required"
+        return 1
+    fi
+
+    klog track "$time - $time #lunch"
+}
+
 # punch out
 po() {
     local -r time="$1"
