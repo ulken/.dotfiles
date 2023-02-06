@@ -9,6 +9,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias -- -="cd -" # go back
+alias cd="z"
 
 # file viewer
 alias cat="bat"
