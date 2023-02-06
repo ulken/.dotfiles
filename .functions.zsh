@@ -1,9 +1,11 @@
+# make directory and navigate to it
 md() {
     local -hr path="$1"
 
     mkdir -p "$path" && cd "$_"
 }
 
+# passcode password
 pw() {
     set -o pipefail
 
@@ -20,6 +22,7 @@ pw() {
     fi
 }
 
+# compress video
 cv() {
     local -r file_path="$1"
 
