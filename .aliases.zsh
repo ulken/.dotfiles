@@ -42,4 +42,4 @@ alias ungron="gron --ungron"
 
 # klog
 alias pc="klog create --should=6h25m" # punch clock
-alias pr="klog today --diff --now"    # punch time remaining
+alias pr="klog today --diff --now | head -2 | tail -n 1 | choose -1" # punch time remaining
