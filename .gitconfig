@@ -21,6 +21,7 @@
   colorMoved = default
 [push]
   default = current
+  autoSetupRemote = true
 [pull]
   rebase = true
 [init]
@@ -28,5 +29,5 @@
 [include]
   path = ~/.gitconfig_work
 [alias]
-	rmb = ! git branch -vv | grep -v origin/ | xargs -n 1 git branch -d
-	rpo = remote prune origin
+  rmb = ! git branch -vv | grep -v origin/ | xargs -n 1 git branch -d
+  rpo = remote prune origin
