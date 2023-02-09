@@ -48,16 +48,22 @@ pi() {
     klog start "${options[@]}"
 }
 
-# punch lunch 
-pl() {
+# punch break
+pb() {
     local -r time="$1"
+    local -r summary="${2-}" # can include #tags
 
     if [ -z "$time" ]; then
         echo "<start-time> required"
         return 1
     fi
 
-    klog track "$time - $time #lunch"
+    klog track "$time - $time $summary"
+}
+
+# punch lunch
+pl() {
+    pb "$1" "#lunch"
 }
 
 # punch out
