@@ -25,7 +25,7 @@
   rebase = true
 [init]
   defaultBranch = main
-[include]
+[includeIf "gitdir:~/dev/work/"]
   path = ~/.gitconfig_work
 [alias]
   rmb = ! git branch -vv | grep -v origin/ | xargs -n 1 git branch -d
