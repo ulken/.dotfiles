@@ -79,7 +79,7 @@ alias help=run-help
 
 # ensure ssh identities stored in Keychain are loaded
 if ! ssh-add -L > /dev/null; then
-  ssh-add -qA
+  ssh-add --apple-load-keychain -q
 fi
 
 # init
