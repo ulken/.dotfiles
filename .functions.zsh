@@ -37,9 +37,7 @@ cv() {
 pi() {
     local -r time="$1"
 
-    local -a options=(
-        --round=5m
-    )
+    local -a options=()
 
     if [ -n "$time" ]; then
         options+=(--time "$time")
@@ -70,9 +68,7 @@ pl() {
 po() {
     local -r time="$1"
 
-    local -a options=(
-        --round=5m
-    )
+    local -a options=()
 
     if [ -n "$time" ]; then
         options+=(--time "$time")
