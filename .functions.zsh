@@ -41,6 +41,15 @@ cv() {
     ffmpeg -i "$file_path" -vcodec libx265 -acodec copy -crf 28 -vtag hvc1 -preset fast "${filename}_compressed.$extension"
 }
 
+redock() {
+ local -r service="$1"
+
+ docker compose stop "$service"
+ docker compose rm -f "$_"
+ docker compose build "$_"
+ docker compose up -d "$_"
+}
+
 # punch in
 pi() {
     local -r time="$1"
