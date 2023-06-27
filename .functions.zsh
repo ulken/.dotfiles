@@ -2,7 +2,15 @@
 md() {
     local -hr path="$1"
 
-    mkdir -p "$path" && cd "$_"
+    mkdir -p "$path"
+    cd "$_"
+}
+
+# contents hash
+cash() {
+    local -hr path="$1"
+    
+    md5 -q "$path" | cut -c -10    
 }
 
 # passcode password
