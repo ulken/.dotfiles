@@ -20,7 +20,6 @@ path+="$GOPATH"
 path+="$GOPATH/bin"
 path+="$GOROOT/bin"
 path+="$PNPM_HOME"
-path+="$BUN_INSTALL/bin"
 
 function .fs() {
   "$(which git)" --git-dir="$HOME/$DOTFILES_REPOSITORY" --work-tree="$HOME" "$@"
@@ -34,7 +33,6 @@ promptinit
 prompt pure
 
 # completion
-
 autoload -U compinit
 compinit
 
@@ -44,8 +42,6 @@ source <(klog completion -c zsh)
 # 1password
 eval "$(op completion zsh)"
 compdef _op op
-
-[ -s "/Users/ulken/.bun/_bun" ] && source "/Users/ulken/.bun/_bun"
 
 zstyle ':completion:*' menu select
 
@@ -78,15 +74,8 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 alias help=run-help
 
-# ensure ssh identities stored in Keychain are loaded
-if ! ssh-add -L > /dev/null; then
-  ssh-add --apple-load-keychain -q
-fi
-
 # init
 eval "$(fnm env)"
-eval "$(thefuck --alias)"
-eval "$(direnv hook zsh)"
 
 # partials
 for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
