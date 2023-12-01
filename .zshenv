@@ -28,3 +28,6 @@ export GOBIN="$GOPATH/bin"
 
 # pnpm
 export PNPM_HOME="/Users/ulken/Library/pnpm"
+
+# azure functions
+export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
