@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 packages=(
-  tldr
-  zx
   @antfu/ni
 )
 
