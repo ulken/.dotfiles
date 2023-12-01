@@ -11,7 +11,6 @@ export EDITOR="vim"
 
 export DOTFILES_REPOSITORY=".dotfiles"
 export ZSH_HOME="$HOME/.zsh"
-export SSH_AUTH_SOCK="$HOME/.ssh/ssh-agent.$HOST.sock"
 
 # homebrew
 export HOMEBREW_CASK_OPTS="--no-quarantine" # don't show "Are you sure you want to..." when first launching an (cask) app
@@ -22,16 +21,10 @@ export PURE_GIT_UNTRACKED_DIRTY=1
 # vim mode
 export MODE_INDICATOR="" # already handled by theme prompt
 
-# thefuck
-export THEFUCK_REQUIRE_CONFIRMATION=false
-
 # go
 export GOPATH="$HOME/go"
 export GOROOT="/usr/local/go"
 export GOBIN="$GOPATH/bin"
-
-# bun
-export BUN_INSTALL="/Users/ulken/.bun"
 
 # pnpm
 export PNPM_HOME="/Users/ulken/Library/pnpm"
