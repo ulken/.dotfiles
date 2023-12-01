@@ -26,6 +26,9 @@ export GOPATH="$HOME/go"
 export GOROOT="/usr/local/go"
 export GOBIN="$GOPATH/bin"
 
+# 1password ssh agent
+export SSH_AUTH_SOCK="~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
 # pnpm
 export PNPM_HOME="/Users/ulken/Library/pnpm"
 
