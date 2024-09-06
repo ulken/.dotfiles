@@ -1,6 +1,5 @@
 # replace built-ins with improved clis
 alias cat='bat --paging=always'
-alias dig='dog --color=auto'
 alias df='duf --only local'
 alias du='dust --reverse'
 alias find='fd --hidden'

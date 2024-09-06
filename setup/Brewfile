@@ -1,6 +1,5 @@
 # command line utilities
 brew "bat"
-brew "dog"
 brew "duf"
 brew "dust"
 brew "eza"
