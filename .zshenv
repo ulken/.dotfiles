@@ -7,7 +7,7 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=$HISTSIZE
 
-export EDITOR="vim"
+export EDITOR="helix"
 
 export DOTFILES_REPOSITORY=".dotfiles"
 export ZSH_HOME="$HOME/.zsh"
