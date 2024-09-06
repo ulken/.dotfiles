@@ -1,8 +1,8 @@
 # list directory contents
-alias ls="exa"
-alias la="exa -aF"
-alias ll="exa -al"
-alias l="exa -a"
+alias ls='eza --icons'
+alias la="ls -aF"
+alias ll="ls -al"
+alias l="ls -a"
 
 # directory navigation
 alias ..="cd .."
