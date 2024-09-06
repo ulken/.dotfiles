@@ -16,6 +16,7 @@ alias ll="ls -al"
 alias l="ls -a"
 
 # directory navigation
+alias cd="z"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
