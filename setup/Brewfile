@@ -43,14 +43,12 @@ brew "xh"
 
 # completions
 brew "bash-completion"
-brew "docker-completion"
 
 # casks
+cask "arc"
 cask "appcleaner"
 cask "bartender"
-cask "dash"
-cask "docker"
-cask "dropbox"
+cask "confectionery"
 cask "fantastical"
 cask "firefox"
 cask "flux"
@@ -58,29 +56,34 @@ cask "fork"
 cask "google-chrome"
 cask "imageoptim"
 cask "karabiner-elements"
-cask "slack" 
+cask "notunes"
+cask "pika"
+cask "proxyman"
+cask "raycast"
+cask "scroll-reverser"
 cask "spotify"
+cask "tableplus"
 cask "the-unarchiver"
 cask "visual-studio-code"
 cask "warp"
+cask "zed"
 cask "1password"
 cask "1password/tap/1password-cli"
 
 # Mac App Store applications
 mas "Battery Indicator", id: 1206020918
 mas "Bear", id: 1091189122
+mas "Command X", id: 6448461551
 mas "Dato", id: 1470584107
+mas "Day Progress", id: 6450280202
+mas "Gifski", id: 1351639930
 mas "Magnet", id: 441258766
+mas "One Thing", id: 1604176982
+mas "Pandan", id: 1569600264
 mas "Spark", id: 1176895641
-
-# Quick Look plugins
-cask "qlcolorcode"
-cask "qlstephen"
-cask "qlmarkdown"
-cask "quicklook-json"
-cask "qlimagesize"
-cask "suspicious-package"
-cask "qlvideo"
+mas "Speediness", id: 1596706466
+mas "ToothFairy", id: 1191449274
+mas "Week Number", id: 6502579523
 
 # fonts
 cask "font-jetbrains-mono"

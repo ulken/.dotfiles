@@ -1,0 +1,11 @@
+# aliases
+cat -> bat
+dig -> dog
+df -> duf
+du -> dust
+ls -> eza
+find -> fd
+ping -> prettyping
+ps -> procs
+grep -> rg
+sed -> sd
