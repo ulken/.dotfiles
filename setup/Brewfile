@@ -1,6 +1,3 @@
-# taps
-tap "homebrew/cask-fonts"
-
 # command line utilities
 brew "bat"
 brew "dog"
