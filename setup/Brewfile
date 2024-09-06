@@ -1,3 +1,8 @@
+# taps
+tap noahgorstein/tap
+tap ovyerus/klog
+tap harelba/q
+
 # command line utilities
 brew "bat"
 brew "duf"
@@ -15,15 +20,15 @@ brew "helix"
 brew "htop"
 brew "jo"
 brew "jq"
-brew "noahgorstein/tap/jqp"
-brew "jotaen/klog/klog"
+brew "jqp"
+brew "klog"
 brew "mas"
 brew "mycli"
 brew "prettyping"
 brew "pnpm"
 brew "procs"
 brew "python"
-brew "harelba/q/q"
+brew "q"
 brew "rename"
 brew "ripgrep"
 brew "shellcheck"
