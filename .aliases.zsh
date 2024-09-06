@@ -27,7 +27,6 @@ alias edit="$EDITOR"
 alias .ze="edit ~/.zshrc"
 alias .ae="edit ~/.aliases.zsh"
 alias .fe="edit ~/.functions.zsh"
-alias .ve="edit ~/.vimrc"
 
 # reload zsh config
 alias .zr="exec zsh"
