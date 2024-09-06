@@ -1,3 +1,14 @@
+# replace built-ins with improved clis
+alias cat='bat --paging=always'
+alias dig='dog --color=auto'
+alias df='duf --only local'
+alias du='dust --reverse'
+alias find='fd --hidden'
+alias ping='prettyping --nolegend'
+alias ps='procs --tree'
+alias grep='rg --smart-case'
+alias sed='sd --global'
+
 # list directory contents
 alias ls='eza --icons'
 alias la="ls -aF"
@@ -9,10 +20,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias -- -="cd -" # go back
-alias cd="z"
-
-# file viewer
-alias cat="bat"
 
 # edit
 alias edit="$EDITOR"
@@ -26,12 +33,6 @@ alias .zr="exec zsh"
 
 # clear screen (not just scroll down)
 alias cls="echo -e '\\0033\\0143'"
-
-# file sizes
-alias ds="du -sh" # directory size
-
-# ping
-alias ping="prettyping --nolegend"
 
 # gron
 alias norg="gron --ungron"
