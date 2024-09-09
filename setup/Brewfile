@@ -1,7 +1,7 @@
 # taps
-tap noahgorstein/tap
-tap ovyerus/klog
-tap harelba/q
+tap "noahgorstein/tap"
+tap "ovyerus/klog"
+tap "harelba/q"
 
 # command line utilities
 brew "bat"
