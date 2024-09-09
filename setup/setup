@@ -2,29 +2,10 @@
 
 set -e
 
-DOTFILES=".dotfiles"
-
-function install_xcode_cli_tools() {
-  local lock_path=/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-
-  product=$(softwareupdate -l |
-    grep "\*.*Command Line" |
-    head -n 1 | awk -F"*" '{print $2}' |
-    sed -e 's/^ *//' |
-    tr -d '\n')
-  softwareupdate -i "$product" --verbose
-
-  rm $lock_path
-}
-
 function .fs() {
-  "$(which git)" --git-dir="$HOME/$DOTFILES" --work-tree="$HOME" "$@"
+  "$(which git)" --git-dir="$HOME/.dotfiles" --work-tree="$HOME" "$@"
 }
 
-if xcode-select -p > /dev/null 2>&1; then
-  echo "Xcode Command Line Tools required, installing..."
-  install_xcode_cli_tools
-fi
 
 .fs submodule update --init
 ./brew.sh
