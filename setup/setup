@@ -8,6 +8,6 @@ function .fs() {
 
 
 .fs submodule update --init
-./brew.sh
-./post_install.sh
-./user_defaults.sh
+./brew
+./post_install
+./user_defaults
