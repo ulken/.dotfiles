@@ -84,6 +84,7 @@ mas "Spark", id: 1176895641
 mas "Speediness", id: 1596706466
 mas "ToothFairy", id: 1191449274
 mas "Week Number", id: 6502579523
+mas "Xcode", id: 497799835
 
 # fonts
 cask "font-jetbrains-mono"
