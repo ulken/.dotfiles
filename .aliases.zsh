@@ -9,7 +9,7 @@ alias grep='rg --smart-case'
 alias sed='sd --global'
 
 # list directory contents
-alias ls='eza --icons'
+alias ls='eza'
 alias la="ls -aF"
 alias ll="ls -al"
 alias l="ls -a"
