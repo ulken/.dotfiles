@@ -77,7 +77,6 @@ cask "1password/tap/1password-cli"
 mas "Battery Indicator", id: 1206020918
 mas "Bear", id: 1091189122
 mas "Command X", id: 6448461551
-mas "Dato", id: 1470584107
 mas "Day Progress", id: 6450280202
 mas "Gifski", id: 1351639930
 mas "Magnet", id: 441258766
