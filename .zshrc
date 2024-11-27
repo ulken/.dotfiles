@@ -76,6 +76,7 @@ alias help=run-help
 
 # init
 eval "$(fnm env)"
+eval "$(direnv hook zsh)"
 
 # partials
 for file in $HOME/.{env,aliases,functions,fzf}.zsh; do
