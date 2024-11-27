@@ -24,9 +24,9 @@ alias -- -="cd -" # go back
 
 # edit
 alias edit="$EDITOR"
-alias .ze="edit ~/.zshrc"
-alias .ae="edit ~/.aliases.zsh"
-alias .fe="edit ~/.functions.zsh"
+alias .ez="edit ~/.zshrc"
+alias .ea="edit ~/.aliases.zsh"
+alias .ef="edit ~/.functions.zsh"
 
 # reload zsh config
 alias .zr="exec zsh"
