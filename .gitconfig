@@ -25,6 +25,8 @@
   rebase = true
 [init]
   defaultBranch = main
+[url "git@github.com:"]
+  insteadOf = https://github.com/
 [credential "https://github.com"]
   helper = 
   helper = !/opt/homebrew/bin/gh auth git-credential
