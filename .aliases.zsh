@@ -7,6 +7,7 @@ alias ping='prettyping --nolegend'
 alias ps='procs --tree'
 alias grep='rg --smart-case'
 alias sed='sd --global'
+alias rm='trash -Fv' # enable "put back" and verbose output
 
 # list directory contents
 alias ls='eza'
