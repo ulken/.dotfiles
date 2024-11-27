@@ -11,9 +11,9 @@ alias rm='trash -Fv' # enable "put back" and verbose output
 
 # list directory contents
 alias ls='eza'
+alias l="ls -a"
 alias la="ls -aF"
 alias ll="ls -al"
-alias l="ls -a"
 
 # directory navigation
 alias cd="z"
