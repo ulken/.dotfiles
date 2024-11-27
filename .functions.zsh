@@ -1,3 +1,9 @@
+# run ls after cd
+function chpwd() {
+    emulate -L zsh
+    ls -a
+}
+
 # make directory and navigate to it
 md() {
     local -hr path="$1"
