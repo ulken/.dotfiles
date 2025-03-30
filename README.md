@@ -1,7 +1,5 @@
-```sh
-git init --bare $HOME/.dotfiles
-alias .fs='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-.fs config --local status.showUntrackedFiles no
-```
+## Install
 
-_– [How to store dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)_
+```sh
+/bin/bash -c "$(curl -fsSL https://bit.ly/ulken-install-dotifles)"
+```
